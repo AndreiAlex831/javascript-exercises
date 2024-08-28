@@ -9,13 +9,20 @@ const subtract = function(firstNum, secondNum) {
   return firstNum - secondNum;
 };
 
-const sum = function() {
-	
+const sum = function(emptyArray) {
+  return emptyArray.reduce(function(acc , curr) {
+  return acc + curr;
+  }, 0);
 };
 
-const multiply = function() {
+sum([]);
 
+const multiply = function(array) {
+  return array.reduce(function(acc , curr) {
+    return acc * curr;
+  });
 };
+
 
 const power = function() {
 	
